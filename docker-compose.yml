@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  ejercicio_jenkins:
+    container_name: ejercicio_jenkins
+    image: ejercicio_jenkins:1.0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 9090:80
